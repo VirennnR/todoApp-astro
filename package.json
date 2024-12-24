@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev --host",
     "build": "astro build",
-    "start": "astro preview",
+    "start": "astro start",
     "astro": "astro",
     "db:generate": "drizzle-kit generate:sqlite",
     "db:push": "drizzle-kit push:sqlite",
