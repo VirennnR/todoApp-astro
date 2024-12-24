@@ -1,14 +1,33 @@
 {
-  "name": "astro-todoapp",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "drizzle-kit push:sqlite",
+    "db:studio": "drizzle-kit studio",
+    "test:db": "node --loader ts-node/esm --experimental-specifier-resolution=node src/db/test.ts"
   },
   "dependencies": {
-    "astro": "^5.1.1"
+    "@astrojs/node": "^9.0.0",
+    "@astrojs/react": "^4.1.2",
+    "@libsql/client": "^0.14.0",
+    "astro": "^5.1.0",
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.7.0",
+    "drizzle-orm": "^0.28.6",
+    "sass": "^1.83.0"
+  },
+  "devDependencies": {
+    "@astrojs/ts-plugin": "^1.10.4",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "drizzle-kit": "^0.19.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
   }
 }
