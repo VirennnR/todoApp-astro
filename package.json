@@ -13,6 +13,7 @@
     "test:db": "node --loader ts-node/esm --experimental-specifier-resolution=node src/db/test.ts"
   },
   "dependencies": {
+    "@astrojs/netlify": "^6.0.1",
     "@astrojs/node": "^9.0.0",
     "@astrojs/react": "^4.1.2",
     "@astrojs/tailwind": "^5.1.4",
